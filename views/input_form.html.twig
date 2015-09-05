@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <!--  bootstrap 3 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <title>Ben's Repeat Word Counter</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ben's Repeat Word Counter</h1>
+            <h3 class="text-info"> How many times does the input word appear in a string?</h3>
+
+            {# This if statement will display one of two error messages if the user did not input correctly #}
+            {% if message is not empty%}
+                <h4 class="text-primary">{{ message }}</h4>
+            {% endif %}
+            <hr>
+
+            <form action="/results">
+                <div class="form-group">
+                    <!-- input word -->
+                    <label for="input_word" class="text-muted"> Enter an input word to search for:</label>
+                    <input id="input_word" name="input_word" class="form-control" type="text" placeholder="Input word" required>
+                    <!-- string -->
+                    <label for="input_string" class="text-muted">Enter a string to search for:</label>
+                    <input id="input_string" name="input_string" class="form-control" type="text" placeholder="Input String" required>
+                </div>
+                <button type="submit" class="btn btn-info">Submit Button </button>
+            </form>
+        </div>
+    </body>
+</html>
