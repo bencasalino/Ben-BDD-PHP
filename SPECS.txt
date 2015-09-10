@@ -28,17 +28,19 @@
 5.  test_zeroMatch_string
 
     Behavior: Will return 0 because the input word does not match any word in the string
-    Input: "php is awesome", "tacos taste great"
+    Input: "php is awesome", "tacos"
     Output: 0
 
 6.  test_oneMatch_string
 
     Behavior: Will return 1 because the input word matches one word in the string
-    Input: "the timbers will win the title this year", "timbers are sweet"
+    Input: "the timbers will win the title this year", "timbers"
     Output: 1 (timbers is the only word that matches)
 
 7.  test_multiMatch_string
 
     Behavior: Will return 3 because the input word matches three words in the string
-    Input: "soccer", "lets play soccer and kick the soccer ball on the soccer field"
+    Input: "lets play soccer and kick the soccer ball on the soccer field", "soccer"
     Output: 3
+
+  8. special cases would go here (punctuation, capital letters)
